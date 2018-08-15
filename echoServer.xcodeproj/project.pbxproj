@@ -7,7 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B27BF9522123589F003BA073 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B27BF9512123589F003BA073 /* main.cpp */; };
+		B23EF241212361E900C75B5B /* libPocoDatad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B23EF229212361E800C75B5B /* libPocoDatad.a */; };
+		B23EF242212361E900C75B5B /* libPocoEncodings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B23EF22A212361E800C75B5B /* libPocoEncodings.a */; };
+		B23EF243212361E900C75B5B /* libPocoZipd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B23EF22B212361E800C75B5B /* libPocoZipd.a */; };
+		B23EF244212361E900C75B5B /* libPocoZip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B23EF22C212361E900C75B5B /* libPocoZip.a */; };
+		B23EF245212361E900C75B5B /* libPocoJSON.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B23EF22D212361E900C75B5B /* libPocoJSON.a */; };
+		B23EF246212361E900C75B5B /* libPocoFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B23EF22E212361E900C75B5B /* libPocoFoundation.a */; };
+		B23EF247212361E900C75B5B /* libPocoUtil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B23EF22F212361E900C75B5B /* libPocoUtil.a */; };
+		B23EF248212361E900C75B5B /* libPocoXML.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B23EF230212361E900C75B5B /* libPocoXML.a */; };
+		B23EF249212361E900C75B5B /* libPocoNetd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B23EF231212361E900C75B5B /* libPocoNetd.a */; };
+		B23EF24A212361E900C75B5B /* libPocoNetSSL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B23EF232212361E900C75B5B /* libPocoNetSSL.a */; };
+		B23EF24B212361E900C75B5B /* libPocoCrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B23EF233212361E900C75B5B /* libPocoCrypto.a */; };
+		B23EF24C212361E900C75B5B /* libPocoEncodingsd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B23EF234212361E900C75B5B /* libPocoEncodingsd.a */; };
+		B23EF24D212361E900C75B5B /* libPocoRedisd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B23EF235212361E900C75B5B /* libPocoRedisd.a */; };
+		B23EF24E212361E900C75B5B /* libPocoNet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B23EF236212361E900C75B5B /* libPocoNet.a */; };
+		B23EF24F212361E900C75B5B /* libPocoNetSSLd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B23EF237212361E900C75B5B /* libPocoNetSSLd.a */; };
+		B23EF250212361E900C75B5B /* libPocoDataSQLited.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B23EF238212361E900C75B5B /* libPocoDataSQLited.a */; };
+		B23EF251212361E900C75B5B /* libPocoData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B23EF239212361E900C75B5B /* libPocoData.a */; };
+		B23EF252212361E900C75B5B /* libPocoCryptod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B23EF23A212361E900C75B5B /* libPocoCryptod.a */; };
+		B23EF253212361E900C75B5B /* libPocoDataSQLite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B23EF23B212361E900C75B5B /* libPocoDataSQLite.a */; };
+		B23EF254212361E900C75B5B /* libPocoFoundationd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B23EF23C212361E900C75B5B /* libPocoFoundationd.a */; };
+		B23EF255212361E900C75B5B /* libPocoJSONd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B23EF23D212361E900C75B5B /* libPocoJSONd.a */; };
+		B23EF256212361E900C75B5B /* libPocoRedis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B23EF23E212361E900C75B5B /* libPocoRedis.a */; };
+		B23EF257212361E900C75B5B /* libPocoUtild.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B23EF23F212361E900C75B5B /* libPocoUtild.a */; };
+		B23EF258212361E900C75B5B /* libPocoXMLd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B23EF240212361E900C75B5B /* libPocoXMLd.a */; };
+		B27BF9522123589F003BA073 /* server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B27BF9512123589F003BA073 /* server.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +47,32 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B23EF229212361E800C75B5B /* libPocoDatad.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoDatad.a; path = "../../Downloads/poco-1.9.0-all/lib/Darwin/x86_64/libPocoDatad.a"; sourceTree = "<group>"; };
+		B23EF22A212361E800C75B5B /* libPocoEncodings.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoEncodings.a; path = "../../Downloads/poco-1.9.0-all/lib/Darwin/x86_64/libPocoEncodings.a"; sourceTree = "<group>"; };
+		B23EF22B212361E800C75B5B /* libPocoZipd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoZipd.a; path = "../../Downloads/poco-1.9.0-all/lib/Darwin/x86_64/libPocoZipd.a"; sourceTree = "<group>"; };
+		B23EF22C212361E900C75B5B /* libPocoZip.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoZip.a; path = "../../Downloads/poco-1.9.0-all/lib/Darwin/x86_64/libPocoZip.a"; sourceTree = "<group>"; };
+		B23EF22D212361E900C75B5B /* libPocoJSON.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoJSON.a; path = "../../Downloads/poco-1.9.0-all/lib/Darwin/x86_64/libPocoJSON.a"; sourceTree = "<group>"; };
+		B23EF22E212361E900C75B5B /* libPocoFoundation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoFoundation.a; path = "../../Downloads/poco-1.9.0-all/lib/Darwin/x86_64/libPocoFoundation.a"; sourceTree = "<group>"; };
+		B23EF22F212361E900C75B5B /* libPocoUtil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoUtil.a; path = "../../Downloads/poco-1.9.0-all/lib/Darwin/x86_64/libPocoUtil.a"; sourceTree = "<group>"; };
+		B23EF230212361E900C75B5B /* libPocoXML.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoXML.a; path = "../../Downloads/poco-1.9.0-all/lib/Darwin/x86_64/libPocoXML.a"; sourceTree = "<group>"; };
+		B23EF231212361E900C75B5B /* libPocoNetd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoNetd.a; path = "../../Downloads/poco-1.9.0-all/lib/Darwin/x86_64/libPocoNetd.a"; sourceTree = "<group>"; };
+		B23EF232212361E900C75B5B /* libPocoNetSSL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoNetSSL.a; path = "../../Downloads/poco-1.9.0-all/lib/Darwin/x86_64/libPocoNetSSL.a"; sourceTree = "<group>"; };
+		B23EF233212361E900C75B5B /* libPocoCrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoCrypto.a; path = "../../Downloads/poco-1.9.0-all/lib/Darwin/x86_64/libPocoCrypto.a"; sourceTree = "<group>"; };
+		B23EF234212361E900C75B5B /* libPocoEncodingsd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoEncodingsd.a; path = "../../Downloads/poco-1.9.0-all/lib/Darwin/x86_64/libPocoEncodingsd.a"; sourceTree = "<group>"; };
+		B23EF235212361E900C75B5B /* libPocoRedisd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoRedisd.a; path = "../../Downloads/poco-1.9.0-all/lib/Darwin/x86_64/libPocoRedisd.a"; sourceTree = "<group>"; };
+		B23EF236212361E900C75B5B /* libPocoNet.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoNet.a; path = "../../Downloads/poco-1.9.0-all/lib/Darwin/x86_64/libPocoNet.a"; sourceTree = "<group>"; };
+		B23EF237212361E900C75B5B /* libPocoNetSSLd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoNetSSLd.a; path = "../../Downloads/poco-1.9.0-all/lib/Darwin/x86_64/libPocoNetSSLd.a"; sourceTree = "<group>"; };
+		B23EF238212361E900C75B5B /* libPocoDataSQLited.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoDataSQLited.a; path = "../../Downloads/poco-1.9.0-all/lib/Darwin/x86_64/libPocoDataSQLited.a"; sourceTree = "<group>"; };
+		B23EF239212361E900C75B5B /* libPocoData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoData.a; path = "../../Downloads/poco-1.9.0-all/lib/Darwin/x86_64/libPocoData.a"; sourceTree = "<group>"; };
+		B23EF23A212361E900C75B5B /* libPocoCryptod.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoCryptod.a; path = "../../Downloads/poco-1.9.0-all/lib/Darwin/x86_64/libPocoCryptod.a"; sourceTree = "<group>"; };
+		B23EF23B212361E900C75B5B /* libPocoDataSQLite.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoDataSQLite.a; path = "../../Downloads/poco-1.9.0-all/lib/Darwin/x86_64/libPocoDataSQLite.a"; sourceTree = "<group>"; };
+		B23EF23C212361E900C75B5B /* libPocoFoundationd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoFoundationd.a; path = "../../Downloads/poco-1.9.0-all/lib/Darwin/x86_64/libPocoFoundationd.a"; sourceTree = "<group>"; };
+		B23EF23D212361E900C75B5B /* libPocoJSONd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoJSONd.a; path = "../../Downloads/poco-1.9.0-all/lib/Darwin/x86_64/libPocoJSONd.a"; sourceTree = "<group>"; };
+		B23EF23E212361E900C75B5B /* libPocoRedis.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoRedis.a; path = "../../Downloads/poco-1.9.0-all/lib/Darwin/x86_64/libPocoRedis.a"; sourceTree = "<group>"; };
+		B23EF23F212361E900C75B5B /* libPocoUtild.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoUtild.a; path = "../../Downloads/poco-1.9.0-all/lib/Darwin/x86_64/libPocoUtild.a"; sourceTree = "<group>"; };
+		B23EF240212361E900C75B5B /* libPocoXMLd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPocoXMLd.a; path = "../../Downloads/poco-1.9.0-all/lib/Darwin/x86_64/libPocoXMLd.a"; sourceTree = "<group>"; };
 		B27BF94E2123589F003BA073 /* echoServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = echoServer; sourceTree = BUILT_PRODUCTS_DIR; };
-		B27BF9512123589F003BA073 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B27BF9512123589F003BA073 /* server.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = server.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +80,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B23EF241212361E900C75B5B /* libPocoDatad.a in Frameworks */,
+				B23EF242212361E900C75B5B /* libPocoEncodings.a in Frameworks */,
+				B23EF243212361E900C75B5B /* libPocoZipd.a in Frameworks */,
+				B23EF244212361E900C75B5B /* libPocoZip.a in Frameworks */,
+				B23EF245212361E900C75B5B /* libPocoJSON.a in Frameworks */,
+				B23EF246212361E900C75B5B /* libPocoFoundation.a in Frameworks */,
+				B23EF247212361E900C75B5B /* libPocoUtil.a in Frameworks */,
+				B23EF248212361E900C75B5B /* libPocoXML.a in Frameworks */,
+				B23EF249212361E900C75B5B /* libPocoNetd.a in Frameworks */,
+				B23EF24A212361E900C75B5B /* libPocoNetSSL.a in Frameworks */,
+				B23EF24B212361E900C75B5B /* libPocoCrypto.a in Frameworks */,
+				B23EF24C212361E900C75B5B /* libPocoEncodingsd.a in Frameworks */,
+				B23EF24D212361E900C75B5B /* libPocoRedisd.a in Frameworks */,
+				B23EF24E212361E900C75B5B /* libPocoNet.a in Frameworks */,
+				B23EF24F212361E900C75B5B /* libPocoNetSSLd.a in Frameworks */,
+				B23EF250212361E900C75B5B /* libPocoDataSQLited.a in Frameworks */,
+				B23EF251212361E900C75B5B /* libPocoData.a in Frameworks */,
+				B23EF252212361E900C75B5B /* libPocoCryptod.a in Frameworks */,
+				B23EF253212361E900C75B5B /* libPocoDataSQLite.a in Frameworks */,
+				B23EF254212361E900C75B5B /* libPocoFoundationd.a in Frameworks */,
+				B23EF255212361E900C75B5B /* libPocoJSONd.a in Frameworks */,
+				B23EF256212361E900C75B5B /* libPocoRedis.a in Frameworks */,
+				B23EF257212361E900C75B5B /* libPocoUtild.a in Frameworks */,
+				B23EF258212361E900C75B5B /* libPocoXMLd.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +115,7 @@
 			children = (
 				B27BF9502123589F003BA073 /* echoServer */,
 				B27BF94F2123589F003BA073 /* Products */,
+				B27BF958212359A2003BA073 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +130,40 @@
 		B27BF9502123589F003BA073 /* echoServer */ = {
 			isa = PBXGroup;
 			children = (
-				B27BF9512123589F003BA073 /* main.cpp */,
+				B27BF9512123589F003BA073 /* server.cpp */,
 			);
 			path = echoServer;
+			sourceTree = "<group>";
+		};
+		B27BF958212359A2003BA073 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B23EF233212361E900C75B5B /* libPocoCrypto.a */,
+				B23EF23A212361E900C75B5B /* libPocoCryptod.a */,
+				B23EF239212361E900C75B5B /* libPocoData.a */,
+				B23EF229212361E800C75B5B /* libPocoDatad.a */,
+				B23EF23B212361E900C75B5B /* libPocoDataSQLite.a */,
+				B23EF238212361E900C75B5B /* libPocoDataSQLited.a */,
+				B23EF22A212361E800C75B5B /* libPocoEncodings.a */,
+				B23EF234212361E900C75B5B /* libPocoEncodingsd.a */,
+				B23EF22E212361E900C75B5B /* libPocoFoundation.a */,
+				B23EF23C212361E900C75B5B /* libPocoFoundationd.a */,
+				B23EF22D212361E900C75B5B /* libPocoJSON.a */,
+				B23EF23D212361E900C75B5B /* libPocoJSONd.a */,
+				B23EF236212361E900C75B5B /* libPocoNet.a */,
+				B23EF231212361E900C75B5B /* libPocoNetd.a */,
+				B23EF232212361E900C75B5B /* libPocoNetSSL.a */,
+				B23EF237212361E900C75B5B /* libPocoNetSSLd.a */,
+				B23EF23E212361E900C75B5B /* libPocoRedis.a */,
+				B23EF235212361E900C75B5B /* libPocoRedisd.a */,
+				B23EF22F212361E900C75B5B /* libPocoUtil.a */,
+				B23EF23F212361E900C75B5B /* libPocoUtild.a */,
+				B23EF230212361E900C75B5B /* libPocoXML.a */,
+				B23EF240212361E900C75B5B /* libPocoXMLd.a */,
+				B23EF22C212361E900C75B5B /* libPocoZip.a */,
+				B23EF22B212361E800C75B5B /* libPocoZipd.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B27BF9522123589F003BA073 /* main.cpp in Sources */,
+				B27BF9522123589F003BA073 /* server.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +343,12 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NSXFX2P39V;
+				HEADER_SEARCH_PATHS = /usr/local/include/;
+				LIBRARY_SEARCH_PATHS = "/usr/local/lib/ ";
+				OTHER_LDFLAGS = (
+					"-lPocoFoundation",
+					"-lPocoNet",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -248,6 +358,12 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NSXFX2P39V;
+				HEADER_SEARCH_PATHS = /usr/local/include/;
+				LIBRARY_SEARCH_PATHS = "/usr/local/lib/ ";
+				OTHER_LDFLAGS = (
+					"-lPocoFoundation",
+					"-lPocoNet",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
