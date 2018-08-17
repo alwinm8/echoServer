@@ -18,7 +18,7 @@ using namespace Poco::Net;
 using namespace Poco;
 using namespace std;
 
-#define BUFFER_SIZE 1024
+#define BUFFER_SIZE 4096
 
 
 int main(int argc, const char * argv[])
@@ -43,17 +43,17 @@ int main(int argc, const char * argv[])
     StreamSocket newStream = myServer.acceptConnection();
     cout << "Recieved a connection from client!" << endl;
     
+    
     for (;;)
     {
         //recieveBytes will return 0 if the connection gets closed
+        buffer.drain();
         int recievedBytes = newStream.receiveBytes(buffer);
         if (recievedBytes == 0)
         {
             //the connection has been closed by client, so lets just cleanup, close the server, and exit
             cout << "Connection has been closed by client, will now exit." << endl;
-            newStream.shutdown();
             newStream.~StreamSocket();
-            buffer.drain();
             buffer.~BasicFIFOBuffer();
             myServer.~ServerSocket();
             exit(0);
@@ -64,8 +64,10 @@ int main(int argc, const char * argv[])
         cout << "Recieved from client :" << charbuffer << endl;
         
         //lets send the same data back to the client
+        buffer.drain();
         buffer.copy(charbuffer, BUFFER_SIZE);
         int sentBytes = newStream.sendBytes(buffer);
+        cout << "Sent to client :" << charbuffer << endl;
         if (sentBytes != BUFFER_SIZE)
         {
             //the SocketStream did not send all the bytes successfully
